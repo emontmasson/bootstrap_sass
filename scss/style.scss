@@ -1,0 +1,32 @@
+// Import des fonctions, variables et mixins Bootstrap
+@import "../node_modules/bootstrap/scss/functions";
+@import "../node_modules/bootstrap/scss/variables";
+@import "../node_modules/bootstrap/scss/mixins";
+
+
+/* Animation de glissement du haut vers le bas */
+@keyframes slideDown {
+  0% {
+    transform: translateY(-100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+/* Appliquer l'animation sur la modale */
+.modal.fade .modal-dialog {
+  animation: slideDown 0.5s ease-out forwards;
+}
+
+
+// Import des styles Bootstrap
+@import "../node_modules/bootstrap/scss/bootstrap";
+
+.bg-primary {
+  background-color: #0069D9 !important;
+}
+
+

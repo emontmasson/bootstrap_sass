@@ -1,26 +1,105 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-  <meta charset="utf-8">
+	<meta charset="utf-8">
 
 
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <style>
-    table td {
-      border: black 1px solid;
-    }
-  </style>
-  <title>
-    Evals
-  </title>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="css/style.css">
+
+	<title>
+		Bootstrap et Sass
+	</title>
 
 </head>
 <body>
-  <div id="divUser">
-    <h1>Liste des utilisateurs</h1>
+	<nav class="navbar navbar-expand-lg bg-light">
+		<div class="container">
+			<a class="navbar-brand" href="#">Mon Site</a>
+			<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+			<div class="collapse navbar-collapse" id="navbarNav">
+				<ul class="navbar-nav ms-auto">
+					<li class="nav-item"><a class="nav-link" href="index.html">Accueil</a></li>
+					<li class="nav-item"><a class="nav-link" href="listUser.html">Liste des utilisateurs</a></li>
 
-  </div>
-  <script type="text/javascript" src="script.js"></script>
+				</ul>
+			</div>
+		</div>
+	</nav>
+	<section class="bg-primary text-white text-center py-5">
+		<div class="container">
+			<h2>Bienvenue sur mon site</h2>
+			<p class="lead">Un site rapide et responsive avec Bootstrap.</p>
+			<a href="#" class="btn btn-light btn-lg">En savoir plus</a>
+		</div>
+	</section>
+	<div class="container my-5">
+		<div class="row">
+			<div class="col-lg-4">
+				<div class="card">
+					<img src="https://cdn.pixabay.com/photo/2017/07/25/11/24/cloud-2537777_1280.jpg" class="card-img-top"
+						 alt="Service 1">
+					<div class="card-body">
+						<h5 class="card-title">Service 1</h5>
+						<p class="card-text">Description du service.</p>
+						<button class="btn btn-primary open-modal" data-service="Détails complets du Service 1">Voir plus
+						</button>
+					</div>
+				</div>
+			</div>
+			<div class="col-lg-4">
+				<div class="card">
+					<img src="https://cdn.pixabay.com/photo/2017/07/25/11/24/cloud-2537777_1280.jpg" class="card-img-top"
+						 alt="Service 2">
+					<div class="card-body">
+						<h5 class="card-title">Service 2</h5>
+						<p class="card-text">Description du service.</p>
+						<button class="btn btn-primary open-modal" data-service="Détails complets du Service 2">Voir plus
+						</button>
+					</div>
+				</div>
+			</div>
+			<div class="col-lg-4">
+				<div class="card">
+					<img src="https://cdn.pixabay.com/photo/2017/07/25/11/24/cloud-2537777_1280.jpg" class="card-img-top"
+						 alt="Service 3">
+					<div class="card-body">
+						<h5 class="card-title">Service 3</h5>
+						<p class="card-text">Description du service.</p>
+						<button class="btn btn-primary open-modal" data-service="Détails complets du Service 3">Voir plus
+						</button>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="modal fade" id="serviceModal" tabindex="-1" aria-labelledby="serviceModalLabel" aria-hidden="true">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<h5 class="modal-title" id="serviceModalLabel">Détails du service</h5>
+					<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Fermer"></button>
+				</div>
+				<div class="modal-body">
+					<p id="modalContent">Contenu du service...</p>
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fermer</button>
+				</div>
+			</div>
+		</div>
+	</div>
+	<footer class="bg-primary text-white text-center py-3">
+		<p class="mb-0">&copy; 2025 Mon Site. Tous droits réservés.</p>
+	</footer>
+
+
+<script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+<script type="text/javascript" src="index.js"></script>
+
 </body>
 </html>
