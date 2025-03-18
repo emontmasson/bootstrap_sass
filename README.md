@@ -10,7 +10,7 @@ Une page qui affiche la liste des utilisateurs.
 Pour installer Sass et Bootstrap dans le projet, exécute la commande suivante :
 
 ```bash
-npm install
+npm install```
 
 ## Configuration de la génération du fichier scss/style.scss dans css/style.css
 Assure-toi que la configuration de Sass génère le fichier scss/style.scss dans css/style.css.
