@@ -1,0 +1,20 @@
+# 🛑 Node.js (évite d'envoyer les dépendances installées)
+node_modules/
+npm-debug.log
+package-lock.json
+
+# 🛑 Bootstrap & Sass compilés (on ne stocke pas les fichiers générés)
+*.css
+*.css.map
+*.scssc
+
+# 🛑 Dossiers de compilation et cache
+dist/
+build/
+.sass-cache/
+.vscode/
+.DS_Store
+
+# 🛑 Environnement spécifique (Windows, macOS, Linux)
+*.log
+Thumbs.db
